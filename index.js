@@ -19,7 +19,7 @@ module.exports = (request, response) => {
   const name = maybeRedirect(removeMdExtension(code));
 
   response.writeHead(302, {
-    Location: `https://github.com/expo/fyi/blob/main/${name}.md`,
+    Location: `https://github.com/FOREVEREALIZE/fyi/blob/main/docs/${name}.md`,
   });
 
   response.end();
