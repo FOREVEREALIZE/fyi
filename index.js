@@ -1,7 +1,12 @@
 module.exports = (request, response) => {
   const { url } = request;
   const urlParts = url.split("/");
-
+  
+  if (url === "/test") {
+    response.send("Hi!").end();
+    return;
+  }
+  
   if (url === "/") {
     response.writeHead(302, {
       Location: `https://github.com/FOREVEREALIZE/fyi`,
