@@ -7,7 +7,7 @@ To use NodeJS on Unix-like OS' your best option is NVM (Node Version Manager).
 
 To install NVM run the following command:
 
-`wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+`wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash`
 
 Restart your terminal and run:
 
