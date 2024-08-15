@@ -1,6 +1,6 @@
 # How to use [@NikunosQuoteBot](https://twitch.tv/NikunosQuoteBot)
 > [!WARNING]
-> Make sure the channel *has* NQB (currently only [@RedBanditPH](https://twitch.tv/RedBanditPH))
+> Make sure the channel *has* NQB (currently only [@RedBanditPH](https://twitch.tv/RedBanditPH) and [@LynmanAlpha](https://twitch.tv/LynmanAlpha))
 
 ## To Quote Someone
 * If you want to quote **the streamer**: use `?q [...]` to create a Quote. (`?quot` and `?quote` are aliases)
