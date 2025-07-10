@@ -20,11 +20,11 @@ module.exports = (request, response) => {
     // who cares? try anyways
   }
 
-  const code = removeWeirdWindowsThing(removeQueryParam(urlParts[1]));
+  const code = removeWeirdWindowsThing(removeQueryParam(urlParts.at(-1)));
   const name = maybeRedirect(removeMdExtension(code));
 
   response.writeHead(302, {
-    Location: `https://github.com/FOREVEREALIZE/fyi/blob/master/docs/${name}.md`,
+    Location: `https://github.com/FOREVEREALIZE/fyi/blob/master/docs/${[...urlParts.slice(1, -1), name].join("/")}.md`,
   });
 
   response.end();
@@ -32,10 +32,6 @@ module.exports = (request, response) => {
 
 // Remap names if needed
 function maybeRedirect(name) {
-  if (name === 'LegacyNotifications-to-ExpoNotifications') {
-    return 'legacy-notifications-to-expo-notifications';
-  }
-
   return name;
 }
 
